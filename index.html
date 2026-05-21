@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSP Calculator | Acuity Risk Consultants</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="screen-warning">
+    <i class="fa-solid fa-mobile-screen-button fa-shake"></i>
+    <p>Please use a bigger screen to access the tool.</p>
+  </div>
+
+  <div class="header">
+    <div class="wrapper">
+      <div class="logo-container">
+        <img src="https://static.wixstatic.com/media/36d2a7_b0859148707b42f7ac7022a13c54109a~mv2.jpg" alt="logo">
+      </div>
+
+      <div class="name">
+        <div id="one">Acuity Risk Consultants</div>
+        <div id="two">Risk, Safety, Insurance</div>
+        <div id="three">Management</div>
+      </div>
+    </div>
+
+    <h1>
+      <span class="title-left">Delivery Service Provider</span><br class="break">
+      <span class="header-accent">—</span>
+      <span class="title-right">Time Saving Calculator</span>
+      <span class="header-accent">—</span>
+    </h1>
+  </div>
+
+  <div class="container">
+
+    <!-- TOP LEFT -->
+    <div class="inside">
+
+      <div class="box-header">
+        <i class="fa-solid fa-clipboard-list fa-fade"></i>
+        Operational Details
+      </div>
+
+      <div class="inside-content">
+
+        <div class="box">
+          <i class="fa-solid fa-route fa-fade"></i>
+          How many routes do you have?
+        </div>
+
+        <div class="box">
+          <input type="text" id="routes" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-users-gear fa-fade"></i>
+          Currently, How many active employees do you have?
+        </div>
+
+        <div class="box">
+          <input type="text" id="active" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-user-plus fa-fade"></i>
+          How many Employees are you planning to hire in the coming quarter?
+        </div>
+
+        <div class="box">
+          <input type="text" id="hire" readonly>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOP RIGHT -->
+    <div class="inside">
+
+      <div class="box-header">
+        <i class="fa-solid fa-clock-rotate-left fa-fade"></i>
+        Savings Break Up (in Hrs)
+      </div>
+
+      <div class="inside-content">
+
+        <div class="box">
+          <i class="fa-solid fa-id-card-clip fa-fade"></i>
+          MVRs
+        </div>
+
+        <div class="box">
+          <input id="b4" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-file-contract fa-fade"></i>
+          Policy Management
+        </div>
+
+        <div class="box">
+          <input id="b5" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-shield-heart fa-fade"></i>
+          Claims & Incidents Management
+        </div>
+
+        <div class="box">
+          <input id="b6" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-truck-ramp-box fa-fade"></i>
+          Employee & Fleet Reconciliation
+        </div>
+
+        <div class="box">
+          <input id="b7" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-chart-simple fa-fade"></i>
+          Driver Performance Analysis & Trainings
+        </div>
+
+        <div class="box">
+          <input id="b8" readonly>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOTTOM LEFT -->
+    <div class="inside">
+
+      <div class="box-header">
+        <i class="fa-solid fa-hourglass-half fa-bounce"></i>
+        Total Time Efficiency
+      </div>
+
+      <div class="inside-content">
+
+        <div class="box">
+          <i class="fa-solid fa-stopwatch fa-bounce"></i>
+          Every quarter, Acuity can save you approximately (Hrs):
+        </div>
+
+        <div class="box">
+          <input type="text" id="total" readonly>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOTTOM RIGHT -->
+    <div class="inside">
+
+      <div class="box-header">
+        <i class="fa-solid fa-chart-line fa-bounce"></i>
+        Financial Impact Analysis
+      </div>
+
+      <div class="inside-content">
+
+        <div class="box">
+          <i class="fa-solid fa-money-bill-trend-up fa-bounce"></i>
+          Quarterly Savings would be upto:
+        </div>
+
+        <div class="box">
+          <input id="quarter" readonly>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-hand-holding-dollar fa-bounce"></i>
+          Annual Savings would be upto:
+        </div>
+
+        <div class="box">
+          <input id="annual" readonly>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+
+    <p>
+      © 2026 Acuity Risk Consultants, Inc.<br class="mobile-break">
+      All Rights Reserved.
+    </p>
+
+    <div class="disclaimer">
+
+      <strong>Disclaimer:</strong>
+
+      This calculator is a proprietary tool of
+      <strong>Acuity Risk Consultants, Inc.</strong>
+
+      The results provided are estimates based on industry benchmarks
+      and the data provided by the user.
+
+      Actual savings may vary depending on specific operational factors,
+      compliance requirements, and individual business circumstances.
+
+      This tool is intended for informational purposes only and does not
+      constitute legal or financial advice.
+
+    </div>
+
+  </footer>
+  <!-- <script src="script.js"></script> -->
+
+</body>
+
+</html>
